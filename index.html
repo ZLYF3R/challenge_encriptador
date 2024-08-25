@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="./Styles/estilos.css">
+</head>
+<body class="body">
+    <header class="top-box">
+        <img src="./assets/logo_alura.png" alt="logo alura">
+    </header>
+    <main class="big-box">
+        <section class="encriptador">
+            <textarea class="caja-encriptador" placeholder="ingrese aquí el texto" id="texto"></textarea>
+            <div class="aviso">
+            <img src="./assets/alert.png" alt="alerta_ico" class="imagen-aviso">
+            <p class="texto-alerta">Solo letras minúsculas y sin acento</p>
+            </div>
+            <div class="contenedor-botones">
+                <button onclick="encriptar()" type="button" class="btn-encriptar">Encriptar</button>
+                <button type="button" class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+        </section>
+
+        <section class="contenedor-resultado">
+            <img src="./assets/Muñeco.png" alt="muñeco con lupa" class="muñeco-resultado">
+            <div class="mensaje-encriptado">
+                <h1 class="titulo-mensaje" id="titulo-mensaje">Ningun mensaje fue encontrado</h1>
+                <p class="parrafo" id="parrafo">Ingresa el texto que deseas
+                encriptar o desencriptar.</p>
+               <!--  <textarea name="mensaje" id="mensaje" cols="30" rows="10" class="mensaje"></textarea> -->
+            </div>
+            <button type="submit" class="btn-copiar" onclick="copiarAlPortapapeles()">Copiar texto</button>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+<script src="index.js"></script>
+</html>
