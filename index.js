@@ -1,6 +1,7 @@
 function encriptar() {
     let texto = document.getElementById ("texto").value;
     let tituloResultado = document.getElementById ("titulo-mensaje");
+    let restablecerTextarea = document.getElementById ("texto");
 
     let textoCifrado = texto        
         .replace(/e/gi, "enter")
@@ -10,14 +11,16 @@ function encriptar() {
         .replace(/u/gi, "ufat");
 
 if (texto.length != 0) {
-    document.getElementById("texto").value = textoCifrado;
+    document.getElementById("mensaje").value = textoCifrado;
     tituloResultado.textContent = "Mensaje encriptado con éxito"
+    restablecerTextarea.value = '';
     }
 }
 
 function desencriptar() {
     let texto = document.getElementById ("texto").value;
     let tituloResultado = document.getElementById ("titulo-mensaje");
+    let restablecerTextarea = document.getElementById ("texto");
     /* let parrafo = document.getElementsById ("parrafo-resultado"); */
 
     let textoCifrado = texto        
@@ -28,16 +31,17 @@ function desencriptar() {
         .replace(/ufat/gi, "u");
 
 if (texto.length != 0) {
-    document.getElementById("texto").value = textoCifrado;
+    document.getElementById("mensaje").value = textoCifrado;
     tituloResultado.textContent = "Mensaje desencriptado con éxito"
+    restablecerTextarea.value = '';
     /* parrafo.textContent = "" */
     }
 }
 
 function copiarTexto() {
-    document.getElementById("texto").value.select()
+    document.getElementById("mensaje").value.select()
 }
 
-function copiarAlPortapapeles(texto) {
-    navigator.clipboard.writeText(document.getElementById ("texto").value)
+function copiarAlPortapapeles() {
+    navigator.clipboard.writeText(document.getElementById ("mensaje").value)
   }

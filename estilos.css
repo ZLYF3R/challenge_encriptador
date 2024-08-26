@@ -23,6 +23,7 @@
 .big-box{
    display: flex;
    flex-direction: row;
+   flex-wrap: wrap;
    align-items: flex-end;
    justify-content: space-evenly;
    gap: 80px;
@@ -148,4 +149,24 @@
    text-decoration: none;
    background-color: var(--color-terceario);
    border-radius: 16px;
+}
+
+.mensaje-resultado{
+   border: none;
+   resize: none;
+   justify-content: center;
+   font-family: var(--fuente-Roboto);
+   font-size: 24px;
+   color: var(--color-terceario);
+}
+
+.mensaje-resultado:focus,
+.mensaje-resultado:active{
+   border:none;
+   outline: none; 
+}
+
+.btn-copiar:active{
+   background-color: var(--color-primario);
+   color: var(--color-terceario);
 }
