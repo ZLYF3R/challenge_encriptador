@@ -104,7 +104,7 @@
 .titulo-mensaje{
    text-align: center;
    font-family: var(--fuente-Roboto);
-   font-size: 24px;
+   font-size: 1.5rem;
    font-weight: 700;
 }
 
@@ -115,7 +115,7 @@
    height: 600px;
    border: none;
    font-family: var(--fuente-Roboto);
-   font-size: 24px;
+   font-size: 1.5rem;
    line-height: 150%;
    background-color: var(--color-primario);
    color: var(--color-terceario);
@@ -135,7 +135,7 @@
    width: 180px;
    height: 40px;
    font-family: var(--fuente-Roboto); 
-   font-size: 14px;
+   font-size: 0.9rem;
    font-weight: 600;
    color: var(--color-secundario);
    text-decoration: none;
@@ -146,9 +146,14 @@
 .mensaje-resultado{
    border: none;
    resize: none;
+   overflow: auto;
+   width: 100%;
+   height:max-content ;
+   box-sizing:border-box;
+   padding: 5px;
    justify-content: center;
    font-family: var(--fuente-Roboto);
-   font-size: 24px;
+   font-size: 0.9rem;
    color: var(--color-terceario);
 }
 
