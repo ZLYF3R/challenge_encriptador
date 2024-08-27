@@ -45,7 +45,7 @@
    padding: 20px 30px;
    border-radius: 19px;
    font-family: var(--fuente-Roboto); 
-   font-size: 14px;
+   font-size: 0.9rem;
    font-weight: 600;
    color: var(--color-secundario);
    text-decoration: none;
@@ -64,7 +64,7 @@
    border-radius: 19px;
    border: 2px solid;
    font-family: var(--fuente-Roboto); 
-   font-size: 14px;
+   font-size: 0.9rem;
    font-weight: 600;
    color: var(--color-terceario);
    text-decoration: none;
