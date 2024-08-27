@@ -34,5 +34,11 @@
     </main>
     <footer></footer>
 </body>
-<script src="index.js"></script>
+<script src="index.js">
+    document.getElementById('texto').addEventListener('input', function(event) {
+    var valor = event.target.value;
+    var regex = /[^a-z\s]/g;
+    event.target.value = valor.replace(regex, '');
+  });
+</script>
 </html>
