@@ -2,6 +2,7 @@ function encriptar() {
     let texto = document.getElementById ("texto").value;
     let tituloResultado = document.getElementById ("titulo-mensaje");
     let restablecerTextarea = document.getElementById ("texto");
+    let quitarParrafo = document.getElementById("parrafo")
 
     let textoCifrado = texto        
         .replace(/e/gi, "enter")
@@ -14,6 +15,7 @@ if (texto.length != 0) {
     document.getElementById("mensaje").value = textoCifrado;
     tituloResultado.textContent = "Mensaje encriptado con éxito"
     restablecerTextarea.value = '';
+    quitarParrafo.value = '';
     }
 }
 
